@@ -1,0 +1,22 @@
+[
+    {
+        "caption": "Tools",
+        "mnemonic": "t",
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "UME",
+                "mnemonic": "f",
+                "id": "ume",
+                "children":
+                [
+                    {
+                        "command": "customer_product_search",
+                        "caption": "Customer Product Search"
+                    }
+                ]
+            }
+        ]
+    }
+]
