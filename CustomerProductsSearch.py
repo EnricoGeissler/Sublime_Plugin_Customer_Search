@@ -74,9 +74,6 @@ class CustomerProductSearchCommand(sublime_plugin.WindowCommand):
         result = {}
         for key , value in dictionary.iteritems():
             if substr in key:
-                print(user_with_not_products_array)
-                print(value)
-                print(key)
                 for i in user_with_not_products_array:
                     if i in value:
                         value.remove(i)
@@ -114,7 +111,6 @@ class CustomerProductSearchCommand(sublime_plugin.WindowCommand):
         search_results = []
         self.customer_products = {}
         self.user_with_not_products_array = []
-        view = self.active_view
         data_map_copy = copy.deepcopy(self.data_map)
         search_string_array , not_products_array = self.get_input_values(self.get_search_string_array(input))
         self.user_with_not_products_array = self.user_with_not_products(not_products_array, data_map_copy)
